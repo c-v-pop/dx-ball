@@ -75,3 +75,7 @@ button {
 #gameScreen { 
 	display: none; 
 }
+
+.headline {
+    color: yellowgreen;
+}

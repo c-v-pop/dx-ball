@@ -70,7 +70,7 @@ const Text = {
 			(CANVAS_HEIGHT / 2) 
 			+ 20, canvas.width, 100); 
 		ctx.font = '2em Roboto sans-serif'; 
-		ctx.fillStyle = '#000000'; 
+		ctx.fillStyle = 'red'; 
 		if (str == '') 
 			ctx.fillText(`${this.text}`, 
 				(CANVAS_WIDTH / 2) - 150, 
@@ -86,7 +86,7 @@ const controller = {
 	y: canvas1.height / 2, 
 	radius: BALL_RADIUS, 
 	draw: function () { 
-		ctx1.fillStyle = "#000000"; 
+		ctx1.fillStyle = "red"; 
 		ctx1.beginPath(); 
 		ctx1.arc(this.x, this.y, 
 			this.radius, 0, 
@@ -135,7 +135,7 @@ const obstacle = {
 	x: OBSTACLE_START_X, 
 	y: OBSTACLE_START_Y, 
 	draw: function (x, y) { 
-		ctx.fillStyle = "#000000"; 
+		ctx.fillStyle = "red"; 
 		ctx.beginPath(); 
 		ctx.fillRect(x, y, this.width, 
 			this.height) 
@@ -172,7 +172,7 @@ const ball = {
 	vy: BALL_VY, 
 	draw: function () { 
 		ctx.beginPath(); 
-		ctx.fillStyle = "#000000"; 
+		ctx.fillStyle = "greenyellow"; 
 		ctx.arc(this.x, this.y, this.radius, 
 			0, Math.PI * 2, true); 
 		ctx.fill(); 
@@ -229,7 +229,7 @@ const paddle = {
 	width: PADDLE_WIDTH, 
 	height: PADDLE_HEIGHT, 
 	draw: function () { 
-		ctx.fillStyle = "#000000"; 
+		ctx.fillStyle = "red"; 
 		ctx.beginPath(); 
 		ctx.fillRect(this.x, this.y, 
 			this.width, this.height); 
